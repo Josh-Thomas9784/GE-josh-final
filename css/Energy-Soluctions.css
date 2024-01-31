@@ -1,3 +1,4 @@
+
 body{
     padding-top: 90px;
     height: 1500px;
@@ -6,10 +7,15 @@ body{
   /*1st part*/
   .part1{
     width: 100%;
-    height: 50svh;
+    height: 50vh;
     background-color: #85bb65;
     display: flex;
     align-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../pictures/polygon-scatter-haikei\ \(1\).svg);
   }
   
   .entry-box{
@@ -30,11 +36,24 @@ body{
   
   h1{
     color: #f5f5dc;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
+  }
+
+  h2{
+    font-family: Archivo Black;
+
   }
   
   .text2{
     font-size: 1.65rem;
+    font-family: Archivo Black;
+  }
+
+  .text3{
+    font-family: Bebas Neue;
+    letter-spacing: 5px;
   }
   
   .pic-box{
@@ -174,7 +193,8 @@ body{
   
   ul li a{
     text-decoration: none;
-    color:#f5f5dc
+    color:#f5f5dc;
+    font-family: Archivo Black;
   }
   
   ul li:hover{
