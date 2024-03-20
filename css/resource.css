@@ -1,7 +1,6 @@
 /*part 1*/
 body{
   height: 2000px;
-  padding-top: 90px;
 }
 
 .part1{ 
@@ -9,7 +8,7 @@ body{
   background-repeat: no-repeat;
   background-position: top 30% right 70%;
   background-size: cover;
-  background-image: url(../pictures/blob-scene-haikei\ \(5\).svg);
+  background-image: url("../pictures/scrap.png");
 
   width: 100%;
 }
@@ -25,7 +24,8 @@ body{
 h1{
   color: white;
   font-size: 5em;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
+  font-family: Bebas Neue;
 }
 
 .part2{
@@ -50,6 +50,7 @@ h1{
   border: 1px solid black; 
   border-radius: 20px;
   width: 25%;
+  height: 120%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -72,7 +73,9 @@ h1{
 }
 
 p{
-  font-size: 20px;
+  font-size: 15px;
+  font-family: Truculenta;
+  word-break: break-all;
 }
 
 .title-a{
@@ -80,6 +83,7 @@ p{
   color: black;
   padding: 10px 0;
   font-size: 22px;
+  font-family: Bebas Neue;
   transition: all 2s;
   transition: all 0.5s;
   letter-spacing: 1px;
@@ -104,6 +108,8 @@ p{
 
 h3{
   font-size: 45px;
+  font-family: Bebas Neue;
+  letter-spacing: 10px;
 }
 
 .text-box2{
@@ -202,7 +208,7 @@ h3{
   }
 
   p{
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .icon-pic{
@@ -248,4 +254,55 @@ h3{
     align-items: center;
     justify-content: center;
   }
+}
+
+/*javascript animations*/
+
+.hidden{
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hidden2{
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show2{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden3{
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translateY(-100%);
+}
+
+.show3{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.refrence-box:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.refrence-box:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.refrence-box:nth-child(4){
+  transition-delay: 600ms;
 }
