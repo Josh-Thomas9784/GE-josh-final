@@ -1,147 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/Additional-practices.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Additional-practices.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="app.js"></script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="index.js"></script>
-  <title>Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="index.js"></script>
+    <link rel="shortcut icon" type="x-icon" href = "pictures/Ges (2).png"> 
+    <title>GE Solutions</title>
+  </head>
 
-<body>
-  <header class="header">
-    <a href="index.html" class="logo"><img src="./pictures/Ges (2).png" alt="Logo"></a>
+  <body>
 
-    <input type="checkbox" id="check">
-    <label for="check" class="icons">
-      <i class='bx bx-menu' id="menu-icon"></i>
-      <i class='bx bx-x' id="close-icon"></i>
-    </label>
+    <div class="preloader"></div>
 
-    <nav class="navbar">
-      <a href="Energy-Solutions.html">Energy Solutions</a>
-      <a href="Additional-Practices.html">Additional Practices</a>
-      <a href="Effects.html">Effects</a>
-      <a href="Community.html">Community</a>
-      <a href="Resources.html">Resources</a>
-    </nav>
-  </header>
+    <header class="header" id="header">
+      <a href="index.html" class="logo"><img src="./pictures/Ges (2).png" alt="Logo"></a>
 
-  <div class="part1">
-    <div class="information">
-      <div class="text">
-        <div class="text-box">
-          <h1>Additional Practices</h1>
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="Energy-Solutions.html">Energy Solutions</a>
+        <a href="Additional-Practices.html">Additional Practices</a>
+        <a href="Effects.html">Effects</a>
+        <a href="Community.html">Community</a>
+        <a href="Resources.html">Resources</a>
+        <a href="sign-up.html" class="button">Sign up</a>
+      </nav>
+    </header>
+
+    <div class="part1 hidden">
+      <div class="information">
+        <div class="text">
+          <div class="text-box">
+            <h1>Additional Practices</h1>
+          </div>
+          <p>Strategies for a Greener Future</p>
         </div>
-        <p>Strategies for a Greener Future</p>
-      </div>
 
+      </div>
+      <div class="d-holder">
+        <video autoplay muted plays-inline>
+          <source src="pictures/Green Illustrative Move to Renewable Energy Animated Instagram Story (5).mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
-    <div class="d-holder">
-      <iframe src='https://my.spline.design/pedersonfinalmainfile-ab207511c35ff4067f59fb081a2af1ab/' frameborder='0'
-        width='100%' height='100%'></iframe>
+
+    <div class="part2">
+      <div class="text-box1">
+        <h2>Examples of Additional practices</h2>
+      </div>
+      <section class="hero-section">
+        <div class="card-grid">
+          <a class="card hidden2" href="#Green">
+            <div class="card__background"
+              style="background-image: url(https://images.pexels.com/photos/3413097/pexels-photo-3413097.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
+            <div class="card__content">
+              <p class="card__category">Additional</p>
+              <h3 class="card__heading">Green Roofs</h3>
+            </div>
+          </a>
+          <a class="card hidden2" href="#Windows">
+            <div class="card__background"
+              style="background-image: url(https://images.pexels.com/photos/256206/pexels-photo-256206.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
+            <div class="card__content">
+              <p class="card__category">Practices</p>
+              <h3 class="card__heading">Energy Efficient Windows</h3>
+            </div>
+          </a>
+          <a class="card hidden2" href="#Materials">
+            <div class="card__background"
+              style="background-image: url(https://images.pexels.com/photos/4577658/pexels-photo-4577658.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
+            <div class="card__content">
+              <p class="card__category">For</p>
+              <h3 class="card__heading">Sustainable Building Materials</h3>
+            </div>
+          </a>
+          <a class="card hidden2" href="#GE">
+            <div class="card__background"
+              style="background-image: url(https://images.pexels.com/photos/3964704/pexels-photo-3964704.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
+            <div class="card__content">
+              <p class="card__category">Green Energy</p>
+              <h3 class="card__heading">Efficient HVAC System</h3>
+            </div>
+          </a>
+        </div>
+      </section>
     </div>
-  </div>
-  <div class="part2">
-    <div class="text-box1">
-      <h2>Examples of Additional practices</h2>
+    <div class="part3 hidden">
+      <div class="align">
+        <div class="info-2">
+            <div class="info-box background" id="Green">
+              <h2>Green Roofs</h2>
+                <p class="text2"><mark>Green roofs</mark> offer a multitude of environmental, economic, and social benefits. They contribute to
+                  stormwater management by absorbing and controlling rainwater runoff, improve air quality through pollutant
+                  absorption, and regulate temperatures, thereby reducing the need for energy-intensive heating and cooling. Green
+                  roofs also enhance urban biodiversity, serving as habitats for wildlife, while providing aesthetic appeal and
+                  recreational spaces for communities. Additionally, these roofs can extend the lifespan of buildings by acting as
+                  a protective layer, contribute to reduced urban heat island effects, and potentially increase property values,
+                  making them a sustainable and multifaceted solution for urban development.</p>
+            </div>
+  
+          <div class="info-box background1" id="Windows">
+            <h2>Energy Efficient Windows</h2>
+            <p class="text2"><mark>Energy-efficient windows</mark> offer a range of advantages in terms of environmental sustainability
+              and economic efficiency. These windows are designed to minimize heat transfer, providing effective insulation
+              and reducing the need for excessive heating or cooling. <mark>By preventing heat loss in colder seasons and heat gain
+                in warmer ones, energy-efficient windows contribute to lower energy consumption,</mark> resulting in potential cost
+                savings. Additionally, they often incorporate features such as low-emissivity coatings and multiple glazing
+              layers to enhance thermal performance, while also blocking harmful ultraviolet rays that can damage furnishings
+              and contribute to increased indoor comfort. Overall, energy-efficient windows play a crucial role in promoting
+              both environmental conservation and economic benefits for building occupants.</p>
+          </div>
+  
+          <div class="info-box background2" id="Materials">
+            <h2>Sustainable Building Materials</h2>
+            <p class="text2"><mark>Sustainable building materials</mark> play a pivotal role in fostering environmentally conscious
+              construction practices and long-term economic viability. These materials are sourced, produced, and utilized in
+              ways that minimize environmental impact throughout their life cycle. Incorporating sustainable materials
+              contributes to resource conservation, reduces carbon emissions, and promotes a healthier indoor environment.
+              Examples include recycled steel, reclaimed wood, and low-emission adhesives. <mark>By selecting materials with
+                eco-friendly certifications and considering factors </mark>like recyclability and energy efficiency, construction
+              projects can achieve a reduced ecological footprint, <mark>you ensure a more sustainable and resilient built
+                environment.</mark></p>
+          </div>
+  
+          <div class="info-box background3" id="GE">
+            <h2>Efficient HVAC System</h2>
+            <p class="text2"><mark>Energy-efficient HVAC (heating, ventilation, and air conditioning) systems</mark> offer substantial
+              benefits in terms of both environmental sustainability and economic efficiency. These systems are designed to
+              optimigreen;rgy usage, resulting in reduced energy consumption and lower utility costs. Features such as
+              programmable thermostats, high-efficiency heat exchangers, and variable-speed technologies enable precise
+              control of indoor climate conditions. <mark>By minimizing energy waste </mark>and employing advanced technologies,
+              energy-efficient HVAC systems <mark>contribute to lower greenhouse gas emissions and lessen the overall
+                environmental impact of buildings.</mark> Investing in such systems not only enhances energy performance but also
+              improves indoor air quality, creating healthier and more comfortable living and working environments.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="hero-section">
-      <div class="card-grid">
-        <a class="card" href="#Green">
-          <div class="card__background"
-            style="background-image: url(https://images.pexels.com/photos/3413097/pexels-photo-3413097.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
-          <div class="card__content">
-            <p class="card__category">Additional</p>
-            <h3 class="card__heading">Green Roofs</h3>
+
+    <div class="part4">
+        <ul class='slider'>
+          <li class='item' style="background-image: url(pictures/sp.jpg)">
+            <div class='content'>
+              <h2 class='title'>Solar Panels</h2>
+              <p class='description'> 
+                Solar panels convert sunlight into electricity using photovoltaic cells, helping generate clean, renewable energy.</p>
+              <a href = "solarSUB.html">Read More</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('pictures/wm.jpg')">
+            <div class='content'>
+              <h2 class='title'>Windmills</h2>
+              <p class='description'> Windmills harness wind energy to produce electricity through rotating blades, contributing to renewable energy production.</p>
+              <a href="windSUB.html">Read More</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('pictures/th.jpg')">
+            <div class='content'>
+              <h2 class='title'>Smart thermostats</h2>
+              <p class='description'> Smart thermostats are advanced devices that regulate heating and cooling systems with features like remote control and energy-saving settings. </p>
+              <a href ="ThermoSUB.html">Read More</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url(pictures/pexels-tom-fournier-16754997.jpg)">
+            <div class='content'>
+              <h2 class='title'>Geothermal Conditioning</h2>
+              <p class='description'> Geothermal conditioning uses the Earth's heat for efficient heating and cooling, reducing reliance on traditional energy sources.
+              </p>
+              <a href="geoSUB.html">Read More</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('pictures/EEV.jpg')">
+            <div class='content'>
+              <h2 class='title'>Electric Vehicles</h2>
+              <p class='description'>Electric vehicles (EVs) run on electricity, emitting no tailpipe emissions. They're charged using electric power, reducing reliance on fossil fuels for transportation.
+              </p>
+              <a href="evSUB.html">Read More</a>
+            </div>
+          </li>
+          <li class='item' style="background-image: url('pictures/pexels-hilary-halliwell-698485.jpg')">
+            <div class='content'>
+              <h2 class='title'>Battery Storage</h2>
+              <p class='description'> 
+                Battery storage stores excess electricity for later use, helping balance energy supply and demand efficiently.  </p>
+              <a href="batSUB.html">Read More</a>
+            </div>
+          </li>
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>GE Pages</h4>
+            <ul>
+              <li><a href="Energy-Solutions.html">Energy Solutions</a></li>
+              <li><a href="Additional-Practices.html">Additional Practices</a></li>
+              <li><a href="Effects.html">Effects</a></li>
+              <li><a href="Community.html">Community</a></li>
+              <li><a href="Resources.html">Resources</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
           </div>
-        </a>
-        <a class="card" href="#Windows">
-          <div class="card__background"
-            style="background-image: url(https://images.pexels.com/photos/256206/pexels-photo-256206.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
-          <div class="card__content">
-            <p class="card__category">Practices</p>
-            <h3 class="card__heading">Energy Efficient Windows</h3>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="ApplianceSUB.html">Appliances</a></li>
+              <li><a href="batSUB.html">Batteries</a></li>
+              <li><a href="evSUB.html">Ev</a></li>
+              <li><a href="geoSUB.html">Geothermal</a></li>
+              <li><a href="solarSUB.html">Solar</a></li>
+            </ul>
           </div>
-        </a>
-        <a class="card" href="#Materials">
-          <div class="card__background"
-            style="background-image: url(https://images.pexels.com/photos/4577658/pexels-photo-4577658.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
-          <div class="card__content">
-            <p class="card__category">For</p>
-            <h3 class="card__heading">Sustainable Building Materials</h3>
+          <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="Community.html">News</a></li>
+              <li><a href="Energy-Solutions.html">FRQ</a></li>
+              <li><a href="sign-up.html">Newsletter</a></li>
+            </ul>
           </div>
-        </a>
-        <a class="card" href="#GE">
-          <div class="card__background"
-            style="background-image: url(https://images.pexels.com/photos/3964704/pexels-photo-3964704.jpeg?auto=compress&cs=tinysrgb&w=600)"></div>
-          <div class="card__content">
-            <p class="card__category">Green Energy</p>
-            <h3 class="card__heading">Efficient HVAC System</h3>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/">Fb</a>
+              <a href="https://www.instagram.com/">I</a>
+              <a href="https://www.youtube.com/">Yt</a>
+              <a href="https://twitter.com/?lang=en">Tw</a>
+            </div>
           </div>
-        </a>
+        </div>
       </div>
-    </section>
+   </footer>
+    
 
-    <section class="info-2">
-      <div class="info-box" id="Green">
-        <h2>Green Roofs</h2>
-        <p class="text2">Green roofs offer a multitude of environmental, economic, and social benefits. They contribute to
-          stormwater management by absorbing and controlling rainwater runoff, improve air quality through pollutant
-          absorption, and regulate temperatures, thereby reducing the need for energy-intensive heating and cooling. Green
-          roofs also enhance urban biodiversity, serving as habitats for wildlife, while providing aesthetic appeal and
-          recreational spaces for communities. Additionally, these roofs can extend the lifespan of buildings by acting as
-          a protective layer, contribute to reduced urban heat island effects, and potentially increase property values,
-          making them a sustainable and multifaceted solution for urban development.</p>
-      </div>
+    <script>
+      window.addEventListener("load", () =>{
+        document.querySelector(".preloader").classList.add("loader--hidden");
 
-      <div class="info-box" id="Windows">
-        <h2>Energy Efficient Windows</h2>
-        <p class="text2">Energy-efficient windows offer a range of advantages in terms of environmental sustainability
-          and economic efficiency. These windows are designed to minimize heat transfer, providing effective insulation
-          and reducing the need for excessive heating or cooling. By preventing heat loss in colder seasons and heat gain
-          in warmer ones, energy-efficient windows contribute to lower energy consumption, resulting in potential cost
-          savings. Additionally, they often incorporate features such as low-emissivity coatings and multiple glazing
-          layers to enhance thermal performance, while also blocking harmful ultraviolet rays that can damage furnishings
-          and contribute to increased indoor comfort. Overall, energy-efficient windows play a crucial role in promoting
-          both environmental conservation and economic benefits for building occupants.</p>
-      </div>
+        document.querySelector(".preloader").addEventListener("transitionend", () =>{
+          document.body.removeChild(document.querySelector(".preloader"));
+        })
+      })
 
-      <div class="info-box" id="Materials">
-        <h2>Sustainable Building Materials</h2>
-        <p class="text2">Sustainable building materials play a pivotal role in fostering environmentally conscious
-          construction practices and long-term economic viability. These materials are sourced, produced, and utilized in
-          ways that minimize environmental impact throughout their life cycle. Incorporating sustainable materials
-          contributes to resource conservation, reduces carbon emissions, and promotes a healthier indoor environment.
-          Examples include recycled steel, reclaimed wood, and low-emission adhesives. By selecting materials with
-          eco-friendly certifications and considering factors like recyclability and energy efficiency, construction
-          projects can achieve a reduced ecological footprint, ensuring a more sustainable and resilient built
-          environment.</p>
-      </div>
+      const slider = document.querySelector('.slider');
 
-      <div class="info-box" id="GE">
-        <h2>Efficient HVAC System</h2>
-        <p class="text2">Energy-efficient HVAC (heating, ventilation, and air conditioning) systems offer substantial
-          benefits in terms of both environmental sustainability and economic efficiency. These systems are designed to
-          optimize energy usage, resulting in reduced energy consumption and lower utility costs. Features such as
-          programmable thermostats, high-efficiency heat exchangers, and variable-speed technologies enable precise
-          control of indoor climate conditions. By minimizing energy waste and employing advanced technologies,
-          energy-efficient HVAC systems contribute to lower greenhouse gas emissions and lessen the overall
-          environmental impact of buildings. Investing in such systems not only enhances energy performance but also
-          improves indoor air quality, creating healthier and more comfortable living and working environments.</p>
-      </div>
-    </section>
-  </div>
+      function activate(e) {
+        const items = document.querySelectorAll('.item');
+        e.target.matches('.next') && slider.append(items[0])
+        e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+      }
 
-
-</body>
+      document.addEventListener('click',activate,false);
+    </script>
 
 
 
+  </body>
 </html>
